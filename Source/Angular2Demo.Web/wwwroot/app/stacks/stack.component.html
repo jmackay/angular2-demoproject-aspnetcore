@@ -1,0 +1,8 @@
+﻿<div class="stack">
+	<div class="stack-container panel panel-primary" *ngIf="stack">
+		<div class="stack-header panel-heading">{{ stack.name }}</div>
+		<div class="stack-body panel-body">
+			<cards [cards]="stack?.cards" [stackId]="stack?.id"></cards>
+		</div>
+	</div>
+</div>

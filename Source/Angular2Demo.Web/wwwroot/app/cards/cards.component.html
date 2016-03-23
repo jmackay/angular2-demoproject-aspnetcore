@@ -1,0 +1,38 @@
+﻿<div class="panel cards" [class.panel-info]="title">
+	<div class="panel-heading" *ngIf="title">
+		<h4>{{ title }}</h4>
+	</div>
+	<div class="panel-body">
+		<div class="row panel">
+			<div class="panel-heading" *ngIf="stackId">
+				<form class="form-horizontal" *ngIf="newCard != null" (ngSubmit)="addNew()" #newForm="ngForm">
+					<div class="form-group">
+						<label for="title">Title:</label>
+						<input class="form-control" id="title" type="text" [(ngModel)]="newCard.title" required/>
+					</div>
+					<div class="form-group">
+						<label for="description">Description:</label>
+						<input class="form-control" id="description" type="text" [(ngModel)]="newCard.description"/>
+					</div>
+					<div class="form-group">
+						<label for="due">Due:</label>
+						<input class="form-control" id="due" type="datetime" [(ngModel)]="newCard.due" required/>
+					</div>
+					<div class="form-group">
+						<label for="category">Category:</label>
+						<select class="form-control" [(ngModel)]="newCard.categoryId" required>
+							<option *ngFor="#category of categories" [value]="category.id">{{ category.name }}</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<button type="submit" class="btn btn-primary" [disabled]="!newForm.form.valid || adding">Add</button>
+					</div>
+				</form>
+				<div *ngIf="newCard == null">
+					<button class="btn btn-primary" (click)="startNew()"><i class="glyphicon glyphicon-plus-sign"></i>&nbsp;Add Card</button>
+				</div>
+			</div>
+		</div>
+		<card *ngFor="#card of cards" [card]="card" [minimized]="minimized"></card>
+	</div>
+</div>

@@ -1,0 +1,10 @@
+﻿{
+	"AppSettings": {
+		"SiteTitle": "Angular 2 Demo"
+	},
+	"Data": {
+		"DefaultConnection": {
+			"ConnectionString": "Server=(localdb)\\MSSQLLocalDB;Database=Angular2Demo;Trusted_Connection=True;MultipleActiveResultSets=true"
+		}
+	}
+}

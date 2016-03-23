@@ -1,0 +1,7 @@
+﻿<div class="container">
+	<div class="row stacks" *ngIf="stacks">
+		<div class="col-sm-12 col-md-4" *ngFor="#stackInfo of stacks">
+			<stack [stack]="stackInfo"></stack>
+		</div>
+	</div>
+</div>

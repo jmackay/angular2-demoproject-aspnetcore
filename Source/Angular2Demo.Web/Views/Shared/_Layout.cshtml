@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>@ViewData["Title"] - Angular 2 Demo</title>
+
+	<environment names="Development">
+		<link rel="stylesheet" href="~/lib/node_modules/bootstrap/dist/css/bootstrap.css" />
+		<link rel="stylesheet" href="~/css/site.css" />
+	</environment>
+	<environment names="Staging,Production">
+		<link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.6/css/bootstrap.min.css"
+			  asp-fallback-href="~/lib/node_modules/bootstrap/dist/css/bootstrap.min.css"
+			  asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+		<link rel="stylesheet" href="~/css/site.min.css" asp-fallback-href="~/css/site.css" asp-append-version="true" />
+	</environment>
+</head>
+<body>
+	@RenderBody()
+
+	<script src="~/lib/node_modules/es6-shim/es6-shim.min.js"></script>
+	<script src="~/lib/node_modules/systemjs/dist/system-polyfills.js"></script>
+	<script src="~/lib/node_modules/angular2/es6/prod/src/testing/shims_for_IE.js"></script>
+	<script src="~/lib/node_modules/angular2/bundles/angular2-polyfills.js"></script>
+	<script src="~/lib/jsonNetDecycle.js"></script>
+	<script src="~/lib/node_modules/js-data/dist/js-data.min.js"></script>
+	<script src="~/lib/node_modules/js-data-http/dist/js-data-http.min.js"></script>
+
+	<environment names="Development">
+		<script src="~/lib/node_modules/systemjs/dist/system.js"></script>
+		<script src="~/lib/node_modules/rxjs/rx.js"></script>
+		<script src="~/lib/node_modules/angular2/bundles/angular2.dev.js"></script>
+	</environment>
+
+	<environment names="Staging,Production">
+		<script src="~/lib/node_modules/systemjs/dist/system.js"></script>
+		<script src="~/lib/node_modules/rxjs/rx.js"></script>
+		<script src="~/lib/node_modules/angular2/bundles/angular2.min.js"></script>
+	</environment>
+
+	<environment names="Development">
+		<script src="~/lib/node_modules/jquery/dist/jquery.js"></script>
+		<script src="~/lib/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+		@*<script src="~/js/site.js" asp-append-version="true"></script>*@
+	</environment>
+	<environment names="Staging,Production">
+		<script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.1.4.min.js"
+				asp-fallback-src="~/lib/node_modules/jquery/dist/jquery.min.js"
+				asp-fallback-test="window.jQuery">
+		</script>
+		<script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/bootstrap.min.js"
+				asp-fallback-src="~/lib/node_modules/bootstrap/dist/js/bootstrap.min.js"
+				asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal">
+		</script>
+		@*<script src="~/js/site.min.js" asp-append-version="true"></script>*@
+	</environment>
+	<script>
+		System.config({
+			baseURL: './lib/node_modules/',
+			defaultJSExtensions: true,
+			warnings: true,
+			//packages: { 'app': { format: 'register', defaultExtension: 'js' } }
+		});
+
+		System.import('./app/main')
+			  .then(console.log("Loaded App"), console.error.bind(console));
+
+	</script>
+	@RenderSection("scripts", required: false)
+</body>
+</html>

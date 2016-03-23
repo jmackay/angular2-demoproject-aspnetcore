@@ -1,0 +1,23 @@
+﻿<div class="card panel panel-info">
+	<!-- We can add conditional styling here -->
+	<div class="panel-heading card-heading" [ngStyle]="{'border-left': '5px solid #' + (card.category.labelColor || 'AAAAAA')}" (click)="minimized = !minimized">{{ card.title }}</div>
+	<div class="panel-body card-body" [class.card-minimized]="minimized">
+		<!-- and more styling here, without a default this time -->
+		<div class="alert" [ngStyle]="{'background-color': '#' + card.category.labelColor}">
+			{{ card.category.name }} (#{{ card.category.labelColor }})
+			<select class="form-control" [(ngModel)]="card.categoryId" required (change)="save($event)">
+				<option *ngFor="#category of categories" [value]="category.id">{{ category.name }}</option>
+			</select>
+		</div>
+		<div class="card-description">{{ card.description }}</div>
+		<div>Due: {{ card.due | dateConvert | date:"short" }}</div>
+		<div>Created: {{ card.created | dateConvert | date:"short" }} by {{ card.createdBy?.name }}</div>
+		<div>
+			Stack: {{ card.stack?.name }}
+			<select class="form-control" [(ngModel)]="card.stackId" required (change)="save($event)">
+				<option *ngFor="#stack of stacks" [value]="stack.id">{{ stack.name }}</option>
+			</select>
+		</div>
+		<div><span style="color: green">//TODO: Add / Update Assignments!</span></div>
+	</div>
+</div>

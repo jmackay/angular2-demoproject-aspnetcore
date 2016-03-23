@@ -1,0 +1,28 @@
+﻿<div class="userDetails view">
+	<div class="container">
+		<header>
+			<h3>
+				<span class="glyphicon glyphicon-user"></span>
+				{{ title }}
+			</h3>
+		</header>
+		<div class="container">
+			<div class="panel panel-primary user" *ngIf="user">
+				<div class="panel-heading user-header">
+					<h3>{{ user.name }}</h3>
+					<h4>{{ user.username }}</h4>
+				</div>
+				<div class="panel-body">
+					<div class="row">
+						<div class="col-sm-12 col-md-6">
+							<cards [cards]="user.assignedCards" [minimized]="false" title="Assigned Cards"></cards>
+						</div>
+						<div class="col-sm-12 col-md-6">
+							<cards [cards]="user.createdCards" title="Created Cards"></cards>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
