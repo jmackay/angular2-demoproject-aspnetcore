@@ -26,7 +26,8 @@ Navigate to the install directory -> source/Angular2Demo.Web folder in a command
 
     npm install
 
-    // This copies the required angular2 node_modules into wwwroot since systemjs needs them to do its "lazy loading". Hopefully future angular2-cli will remove this requirement!!
+// This copies the required angular2 node_modules into wwwroot since systemjs needs them to do its "lazy loading". Hopefully future angular2-cli will remove this requirement!!
+
     gulp angular2:moveLibs
 
 
@@ -69,7 +70,7 @@ Now to reload your test data, run the website and go to `/api/reset`, this will 
 
 I've also included .json files for each api which you can use by modifying the data.service.ts file if you do not want to setup / use mssql. This will not allow you to save information but will allow you to load it :)
 
-You will need to go to `app/shared/data.service.ts` and change `useStatic` to `true`
+You will need to go to `app/shared/services/data.service.ts` and change `useStatic` to `true`
 
 ### Option 3 - Use another backend
 
