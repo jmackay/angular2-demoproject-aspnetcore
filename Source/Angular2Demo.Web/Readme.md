@@ -69,6 +69,8 @@ Now to reload your test data, run the website and go to `/api/reset`, this will 
 
 I've also included .json files for each api which you can use by modifying the data.service.ts file if you do not want to setup / use mssql. This will not allow you to save information but will allow you to load it :)
 
+You will need to go to `app/shared/data.service.ts` and change `useStatic` to `true`
+
 ### Option 3 - Use another backend
 
 This will require you to DIY but you should be able to easily hook into other databases by using **Entity Framework 7 configuration** in the config above (`config.json`) and `Startup.cs` or something like **Firebase** in `data.service.ts`
