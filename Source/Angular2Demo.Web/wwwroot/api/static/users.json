@@ -1,0 +1,42 @@
+﻿[
+	{
+		"id": 1,
+		"name": "John Mackay",
+		"username": "jmackay",
+		"createdCards": null,
+		"assignedTo": null,
+		"createdAssignments": null
+	},
+	{
+		"id": 2,
+		"name": "Matthew Overall",
+		"username": "moverall",
+		"createdCards": null,
+		"assignedTo": null,
+		"createdAssignments": null
+	},
+	{
+		"id": 3,
+		"name": "Peter Parker",
+		"username": "pparker",
+		"createdCards": null,
+		"assignedTo": null,
+		"createdAssignments": null
+	},
+	{
+		"id": 4,
+		"name": "Sally Sue",
+		"username": "ssue",
+		"createdCards": null,
+		"assignedTo": null,
+		"createdAssignments": null
+	},
+	{
+		"id": 5,
+		"name": "Mary Jane",
+		"username": "mjane",
+		"createdCards": null,
+		"assignedTo": null,
+		"createdAssignments": null
+	}
+]

@@ -1,0 +1,23 @@
+﻿[
+	{
+		"id": 1,
+		"name": "Backlog",
+		"previousStackId": null,
+		"previousStack": null,
+		"cards": null
+	},
+	{
+		"id": 2,
+		"name": "In Progress",
+		"previousStackId": 1,
+		"previousStack": null,
+		"cards": null
+	},
+	{
+		"id": 3,
+		"name": "Completed",
+		"previousStackId": 2,
+		"previousStack": null,
+		"cards": null
+	}
+]

@@ -1,0 +1,102 @@
+﻿[
+	{
+		"id": 1,
+		"assignedToId": 2,
+		"cardId": 1,
+		"created": "2016-03-21T10:20:03.937079-07:00",
+		"createdById": 1,
+		"card": null,
+		"assignedTo": null,
+		"createdBy": null
+	},
+	{
+		"id": 2,
+		"assignedToId": 3,
+		"cardId": 2,
+		"created": "2016-03-22T05:45:03.937079-07:00",
+		"createdById": 4,
+		"card": null,
+		"assignedTo": null,
+		"createdBy": null
+	},
+	{
+		"id": 3,
+		"assignedToId": 1,
+		"cardId": 3,
+		"created": "2016-03-22T09:00:03.937079-07:00",
+		"createdById": 1,
+		"card": null,
+		"assignedTo": null,
+		"createdBy": null
+	},
+	{
+		"id": 4,
+		"assignedToId": 4,
+		"cardId": 4,
+		"created": "2016-03-22T08:45:03.937079-07:00",
+		"createdById": 4,
+		"card": null,
+		"assignedTo": null,
+		"createdBy": null
+	},
+	{
+		"id": 5,
+		"assignedToId": 5,
+		"cardId": 4,
+		"created": "2016-03-22T08:45:03.937079-07:00",
+		"createdById": 4,
+		"card": null,
+		"assignedTo": null,
+		"createdBy": null
+	},
+	{
+		"id": 6,
+		"assignedToId": 5,
+		"cardId": 5,
+		"created": "2016-03-22T06:45:03.937079-07:00",
+		"createdById": 1,
+		"card": null,
+		"assignedTo": null,
+		"createdBy": null
+	},
+	{
+		"id": 7,
+		"assignedToId": 2,
+		"cardId": 6,
+		"created": "2016-03-22T06:45:03.937079-07:00",
+		"createdById": 1,
+		"card": null,
+		"assignedTo": null,
+		"createdBy": null
+	},
+	{
+		"id": 8,
+		"assignedToId": 3,
+		"cardId": 6,
+		"created": "2016-03-22T06:45:03.937079-07:00",
+		"createdById": 1,
+		"card": null,
+		"assignedTo": null,
+		"createdBy": null
+	},
+	{
+		"id": 9,
+		"assignedToId": 4,
+		"cardId": 6,
+		"created": "2016-03-22T06:45:03.937079-07:00",
+		"createdById": 1,
+		"card": null,
+		"assignedTo": null,
+		"createdBy": null
+	},
+	{
+		"id": 10,
+		"assignedToId": 5,
+		"cardId": 6,
+		"created": "2016-03-22T06:45:03.937079-07:00",
+		"createdById": 1,
+		"card": null,
+		"assignedTo": null,
+		"createdBy": null
+	}
+]

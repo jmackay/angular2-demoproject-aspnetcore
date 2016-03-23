@@ -1,0 +1,20 @@
+﻿[
+	{
+		"id": 1,
+		"name": "Regular",
+		"labelColor": "",
+		"cards": null
+	},
+	{
+		"id": 2,
+		"name": "Important",
+		"labelColor": "FF6666",
+		"cards": null
+	},
+	{
+		"id": 3,
+		"name": "Bug",
+		"labelColor": "FFFF66",
+		"cards": null
+	}
+]
