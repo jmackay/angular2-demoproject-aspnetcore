@@ -9,9 +9,10 @@ This is an angular 2 and asp.net vnext 5 starter with an example scrum type boar
 ## Requirements
 
 1. Visual studio / VSCode
-2. SqlServer (or re-write the data access layer)
-3. NodeJS / NPM
-4. Gulp installed (npm install -g gulp after installing node/npm)    
+2. Latest MVC 5 installed (https://get.asp.net/)
+3. SqlServer (or re-write the data access layer)
+4. NodeJS / NPM (install 4.4 from https://nodejs.org/)
+5. Gulp installed (npm install -g gulp after installing node/npm)    
 
 ## Setup Required
 
@@ -32,6 +33,8 @@ Navigate to the install directory -> source/Angular2Demo.Web folder in a command
 Note if you make changes to the Model classes, please make sure to update the .d.ts files.
 
 >*TIP: You can enable auto generation of these by using Web Essentials Typescript Generation by right-clicking on the `Models/*.cs files` and selecting `Web Essentials -> Create Typescript Intelisense File`*
+
+Open Solution file in Visual Studio 2015 and build, or Open in VS Code and make sure all typescript files create their js files and map by running tsc.
 
 ### Option 1 - MSSQL Database Configuration - READ / WRITE access, full application!
 
