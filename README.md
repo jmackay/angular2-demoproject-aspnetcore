@@ -26,7 +26,8 @@ Navigate to the install directory -> source/Angular2Demo.Web folder in a command
 
     npm install
 
-    // This copies the required angular2 node_modules into wwwroot since systemjs needs them to do its "lazy loading". Hopefully future angular2-cli will remove this requirement!!
+// This copies the required angular2 node_modules into wwwroot since systemjs needs them to do its "lazy loading". Hopefully future angular2-cli will remove this requirement!!
+
     gulp angular2:moveLibs
 
 
@@ -34,7 +35,23 @@ Note if you make changes to the Model classes, please make sure to update the .d
 
 >*TIP: You can enable auto generation of these by using Web Essentials Typescript Generation by right-clicking on the `Models/*.cs files` and selecting `Web Essentials -> Create Typescript Intelisense File`*
 
-Open Solution file in Visual Studio 2015 and build, or Open in VS Code and make sure all typescript files create their js files and map by running tsc.
+Restore Packages / Set DNX to use latest
+
+    Using PowerShell under Angular2Demo.Web folder:
+    
+    dnvm install latest -r clr -arch x64
+    
+    dnu restore
+    
+    tsc
+
+Open Solution file in Visual Studio 2015 and build
+
+or
+
+Open in VS Code and make sure all typescript files create their js files and map by running tsc.
+
+
 
 ### Option 1 - MSSQL Database Configuration - READ / WRITE access, full application!
 
