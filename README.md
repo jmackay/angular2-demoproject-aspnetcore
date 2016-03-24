@@ -2,6 +2,8 @@
 
 **Please note**: This was created for use as a demo project for a 6hr workshop at Boise Tech Fest. *It is not an example of best practices* and was meant to be used for multiple examples of how the Angular 2 works compared with Angular 1.
 
+You can view the node only (front end only) version here - https://github.com/jmackay/angular2-demoproject-node
+
 Slides are available at https://goo.gl/EQoPMJ
 
 This is an angular 2 and asp.net vnext 5 starter with an example scrum type board and users.
